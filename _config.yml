@@ -1,5 +1,38 @@
 title: Tristan Lismer
-description: Quantum optics and SQL portfolio
-baseurl: ""
+description: Quantum optics, endurance sports, and SQL explorations
 url: "https://tristanlismer.github.io"
-theme: minima
+baseurl: ""
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+minimal_mistakes_skin: dark
+markdown: kramdown
+kramdown:
+  input: GFM
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Navigation bar
+nav:
+  - title: "Home"
+    url: /
+  - title: "Academics"
+    url: /academics/
+  - title: "Athletics"
+    url: /athletics/
+  - title: "Projects"
+    url: /projects/
